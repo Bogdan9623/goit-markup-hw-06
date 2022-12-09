@@ -348,20 +348,20 @@
                     <div class="footer-contacts">
                         <a href="./index.html" class="link logo logo-footer"><span class="logo-acсent">Web</span>Studio</a>
                     
-                    <address>
-                        <ul class="list adress-list">
-                            <li class="list-item">
-                                <a href="https://goo.gl/maps/pZtriTXGYVxve7bN9" class="link address-link">м. Київ, пр-т Лесі Українки,
-                                    26</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="mailto:info@devstudio.com" class="link footer-contact-link">info@devstudio.com</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="tel:+380961111111" class="link footer-contact-link">+38 096 111 11 11</a>
-                            </li>
-                        </ul>
-                    </address>
+                        <address>
+                            <ul class="list adress-list">
+                                <li class="list-item">
+                                    <a href="https://goo.gl/maps/pZtriTXGYVxve7bN9" class="link address-link">м. Київ, пр-т Лесі Українки,
+                                        26</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="mailto:info@devstudio.com" class="link footer-contact-link">info@devstudio.com</a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="tel:+380961111111" class="link footer-contact-link">+38 096 111 11 11</a>
+                                </li>
+                            </ul>
+                        </address>
                     </div>
 
                     <div class="footer-soc">
@@ -400,10 +400,11 @@
                     </div>
 
                     
-                    <form name="newsletter-form">
-                        <b class="form-title">Підпишіться на розсилку</b>
+                    <form name="newsletter-form" class="newsletter-form">
+                        <h2 class="title form-title">Підпишіться на розсилку</h2>
                         <div class="email-input">
-                            <input type="email" name="newsletter" placeholder="E-mail" class="newsletter-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                            <label for="newsletter"></label>
+                            <input type="email" name="newsletter" id="newsletter" placeholder="E-mail" class="newsletter-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
                                 
                             <button type="submit" class="btn form-btn">
                                 Підписатися
@@ -413,7 +414,6 @@
                             </button>
                         </div>
                     </form>
-                    
                 </div>
             </footer>
 
