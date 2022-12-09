@@ -47,6 +47,20 @@
     }
 }
 
+@keyframes checkboxOff {
+    0% {
+        border: none;       
+        background-image: url(../images/icon_check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    100% {
+        background-image: none;
+        border: 2px solid var(--primary-title-colour);
+    }
+}
+
 /*  -------------BODY-------------  */
 h1,
 h2,
@@ -971,7 +985,12 @@ header {
     height: 15px;
     border: 2px solid var(--primary-title-colour);
     border-radius: 2px;
-    margin-right: 8px;  
+    margin-right: 8px;
+    
+    animation-name: checkboxOff;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: forwards;  
 }
 
 .politic-checkbox:checked + .modal-politic-label::before {
